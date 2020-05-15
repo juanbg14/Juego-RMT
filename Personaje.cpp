@@ -11,6 +11,9 @@ void Personaje::setvel(float x, float y) {
 	velocidad.x = x;
 	velocidad.y = y;
 }
+void Personaje::setvida(float vida){
+	this->vida=vida;
+}
 Vector2D Personaje::getpos() {
 	return posicion;
 }
