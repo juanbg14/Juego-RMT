@@ -2,21 +2,7 @@
 
 //los callback, funciones que seran llamadas automaticamente por la glut
 //cuando sucedan eventos
-//NO HACE FALTA LLAMARLAS EXPLICITAMENTE
-void OnDraw(void); //esta funcion sera llamada para dibujar
-void OnTimer(int value); //esta funcion sera llamada cuando transcurra una temporizacion
-void OnKeyboardDown(unsigned char key, int x, int y); //cuando se pulse una tecla	
-
-int main(int argc, char* argv[])
-{
-	//Inicializar el gestor de ventanas GLUT
-	//y crear la ventana
-	glutInit(&argc, argv);
-	glutInitWindowSize(800, 600);
-	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
-	glutCreateWindow("MiJuego");
-
-	//habilitar luces y definir perspectiva
+//perspectiva
 	glEnable(GL_LIGHT0);
 	glEnable(GL_LIGHTING);
 	glEnable(GL_DEPTH_TEST);
@@ -47,7 +33,7 @@ void OnDraw(void)
 		0.0, 0, 0.0,      // hacia que punto mira  (0,0,0) 
 		0.0, 1.0, 0.0);      // definimos hacia arriba (eje Y)    
 
-	//aqui es donde hay que poner el código de dibujo
+	//aqui es donde hay que poner el cÃ³digo de dibujo
 	glutWireCube(5);
 
 	//no borrar esta linea ni poner nada despues
