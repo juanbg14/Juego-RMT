@@ -9,8 +9,9 @@ protected:
 	float vida;
 public:
 	void mueve(float);
-	void setpos(float ix, float iy);
-	void setvel(float ix, float iy);
+	void setpos(float x, float y);
+	void setvel(float x, float y);
+	void setvida(float vida);
 	Vector2D getpos();
 	float getaltura();
 };
