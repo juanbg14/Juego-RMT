@@ -12,6 +12,7 @@ public:
 	void setpos(float,float);
 	void setvel(float,float);
 	void setvida(float);
+	float getvida();
 	Vector2D getpos();
 	float getaltura();
 };
