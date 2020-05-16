@@ -1,7 +1,9 @@
 #pragma once
-#include"Vector2D"
+#include"Vector2D.h"
+#include"Hitbox.h"
 class Personaje {
 protected:
+	Hitbox hit;
 	Vector2D posicion;
 	Vector2D velocidad;
 	Vector2D aceleracion;
