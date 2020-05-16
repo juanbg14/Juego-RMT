@@ -9,4 +9,7 @@ public:
 	virtual ~Hitbox();
 	void setradio(float);
 	float getradio();
+	float GetPos();
+	float GetRandom();
+	float GetVisa();
 };
